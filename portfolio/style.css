@@ -160,3 +160,106 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     font: normal 400 20px/40px "Inter", sans-serif;
     /* transition: all ease-in-out 0.3s; */
 }
+
+/*  */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    width: 50%;
+    height: 80px;
+    font: normal 700 40px/80px "Merriweather", sans-serif;
+    color: #BDAE82;
+    overflow: hidden;
+}
+
+.section-title::before, .section-title::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #BDAE82;
+    height: 2px;
+    width: 100%;
+}
+
+.section-title::before {
+    margin-left: -100%;
+    left: -20px;
+}
+
+.section-title::after {
+    margin-right: -100%;
+    right: -20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 8px;
+    max-width: 1400px;
+    width: 100%;
+    list-style: none;
+    color: white;
+}
+
+.skills-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    width: 100%;
+}
+
+.skills-list-item-icon {
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.skills-list-item-title {
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    font: normal 700 20px/40px "Inter", sans-serif;
+}
+
+.skills-list-item-text {
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
+    font: normal 400 18px/36px "Inter", sans-serif;
+}
+
+.skills-list-item-icon.skills-camera {
+    background-image: url(./assets/svg/skills-camera.svg);
+    width: 62px;
+}
+
+.skills-list-item-icon.skills-video {
+    background-image: url(./assets/svg/skills-video.svg);
+    width: 60px;
+}
+
+.skills-list-item-icon.skills-retouch {
+    background-image: url(./assets/svg/skills-retouch.svg);
+    width: 66px;
+}
+
+.skills-list-item-icon.skills-audio {
+    background-image: url(./assets/svg/skills-audio.svg);
+    width: 32px;
+}
+
+
