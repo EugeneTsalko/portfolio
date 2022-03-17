@@ -304,3 +304,79 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     background-size: cover;
 }
 
+/*  */
+
+.video-player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    height: 705px;
+    width: 100%;
+    background: url(./assets/img/jpg/video-player.jpg) no-repeat center 0;
+    background-size: cover;
+}
+
+.video-player-button {
+    position: absolute;
+    width: 129px;
+    height: 130px;
+    cursor: pointer;
+    border: none;
+    background: url(./assets/svg/video-play.svg) no-repeat center center;
+    /* transition: filter ease-in-out 0.3s; */
+}
+
+/*  */
+
+.price-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.price-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 450px;
+    width: 100%;
+    border: 3px solid #BDAE82;
+    box-sizing: border-box;
+}
+
+.price-item-title {
+    padding-top: 43px;
+    padding-bottom: 20px;
+    font: normal 700 28px/56px "Merriweather", sans-serif;
+    color: #FFFFFF;
+}
+
+.price-item-price {
+    padding-bottom: 20px;
+    font: normal 700 24px/48px "Merriweather", sans-serif;
+    color: #BDAE82;
+}
+
+.price-item-description {
+    text-align: center;
+    max-width: 364px;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.price-item-description-text {
+    font: normal 400 18px/36px "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+.price-item-button {
+    margin-bottom: 40px;
+}
