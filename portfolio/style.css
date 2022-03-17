@@ -262,4 +262,45 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     width: 32px;
 }
 
+/*  */
+
+.portfolio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    max-width: 895px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.portfolio-buttons-item {
+    max-width: 220px;
+    width: 100%;
+    height: 55px;
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: transparent;
+    color: #BDAE82;
+    font: normal 400 20px/40px "Inter", sans-serif;
+    /* transition: all ease-in-out 0.3s; */
+}
+
+.portfolio-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.portfolio-images-item {
+    max-width: 450px;
+    width: 100%;
+    height: 560px;
+    background-position: center center;
+    background-size: cover;
+}
 
