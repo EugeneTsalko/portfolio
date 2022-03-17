@@ -19,7 +19,7 @@ body {
     justify-content: center;
     background-color: black;
     /* transition: background ease-in-out 0.3s; */
-  }
+}
 
 /*  */
 
@@ -118,4 +118,45 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     cursor: pointer;
     transition: 0.3s;
     font: normal 400 20px/50px "Inter", sans-serif;
+}
+
+/*  */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 160px;
+    margin-right: auto;
+    padding-left: 80px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero-title {
+    font: normal 700 60px/120px "Merriweather", sans-serif;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    /* transition: color ease-in-out 0.3s; */
+}
+
+.hero-text {
+    max-width: 470px;
+    font: normal 400 20px/40px "Inter", sans-serif;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+    width: 100%;
+    /* transition: color ease-in-out 0.3s; */
+}
+
+.button {
+    max-width: 220px;
+    height: 55px;
+    width: 100%;
+    background-color: #BDAE82;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font: normal 400 20px/40px "Inter", sans-serif;
+    /* transition: all ease-in-out 0.3s; */
 }
