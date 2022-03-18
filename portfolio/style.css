@@ -47,6 +47,14 @@ body {
     height: 910px;
 }
 
+@media (max-width: 780px) {
+    .hero-wrapper {
+        height: 590px;
+        background-size: auto 620px;
+        background-position: -5px -30px;
+    }
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -65,9 +73,15 @@ body {
     transition: ease-in-out 0.3s;
 }
 
+@media (max-width: 780px) {
+    .header-logo-link {
+        margin-left: 60px;
+    }
+}
+
 .header-logo-link:hover {
-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-  contrast(87%);
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
 
 .header-nav {
@@ -135,11 +149,25 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     width: 100%;
 }
 
+@media (max-width: 780px) {
+    .hero-section {
+        max-width: 390px;
+        padding-top: 78px;
+        padding-left: 60px;
+    }
+}
 .hero-title {
     font: normal 700 60px/120px "Merriweather", sans-serif;
     color: #FFFFFF;
     padding-bottom: 10px;
     transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 780px) {
+    .hero-title {
+        font: normal 400 32px/64px "Merriweather", sans-serif;
+        padding-bottom: 20px;
+    }
 }
 
 .hero-text {
@@ -149,6 +177,13 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     padding-bottom: 25px;
     width: 100%;
     transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 780px) {
+    .hero-text {
+        font: normal 400 20px/24.2px "Inter", sans-serif;
+        padding-bottom: 60px;
+    }
 }
 
 .button {
