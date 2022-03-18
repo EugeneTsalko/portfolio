@@ -362,6 +362,12 @@ body {
     margin-bottom: 60px;
 }
 
+@media (max-width: 1000px) {
+    .portfolio-buttons {
+        max-width: 450px;
+    }
+}
+
 .portfolio-buttons-item {
     max-width: 220px;
     width: 100%;
