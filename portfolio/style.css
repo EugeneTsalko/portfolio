@@ -18,7 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: black;
-    /* transition: background ease-in-out 0.3s; */
+    transition: ease-in-out 0.3s;
 }
 
 /*  */
@@ -62,7 +62,7 @@ body {
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    transition: 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
 .header-logo-link:hover {
@@ -98,8 +98,11 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     color: white;
     text-decoration: none;
     scroll-behavior: smooth;
-    /* transition: color ease-in-out 0.3s; */
-    transition: 0.3s;
+    transition: ease-in-out 0.3s;
+}
+
+.header .list-item-link:hover {
+    color: #BDAE82;
 }
 
 .lang-switch {
@@ -116,7 +119,7 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     border: none;
     color: white;
     cursor: pointer;
-    transition: 0.3s;
+    transition: ease-in-out 0.3s;
     font: normal 400 20px/50px "Inter", sans-serif;
 }
 
@@ -136,7 +139,7 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     font: normal 700 60px/120px "Merriweather", sans-serif;
     color: #FFFFFF;
     padding-bottom: 10px;
-    /* transition: color ease-in-out 0.3s; */
+    transition: ease-in-out 0.3s;
 }
 
 .hero-text {
@@ -145,7 +148,7 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     color: #FFFFFF;
     padding-bottom: 25px;
     width: 100%;
-    /* transition: color ease-in-out 0.3s; */
+    transition: ease-in-out 0.3s;
 }
 
 .button {
@@ -158,7 +161,11 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     cursor: pointer;
     color: black;
     font: normal 400 20px/40px "Inter", sans-serif;
-    /* transition: all ease-in-out 0.3s; */
+    transition: ease-in-out 0.3s;
+}
+
+.button:hover {
+    color: #FFFFFF;
 }
 
 /*  */
@@ -284,7 +291,11 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     background-color: transparent;
     color: #BDAE82;
     font: normal 400 20px/40px "Inter", sans-serif;
-    /* transition: all ease-in-out 0.3s; */
+    transition: ease-in-out 0.3s;
+}
+
+.portfolio-buttons-item:hover {
+    color: #FFFFFF;
 }
 
 .portfolio-images {
@@ -325,9 +336,13 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     cursor: pointer;
     border: none;
     background: url(./assets/svg/video-play.svg) no-repeat center center;
-    /* transition: filter ease-in-out 0.3s; */
+    transition: ease-in-out 0.3s;
 }
 
+.video-player-button:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+  contrast(87%);
+}
 /*  */
 
 .price-wrapper {
@@ -429,7 +444,7 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     font: normal 400 20px/40px "Inter", sans-serif;
     color: #BDAE82;
     padding-left: 20px;
-    /* transition: background ease-in-out 0.3s; */
+    transition: ease-in-out 0.3s;
 }
 
 .contacts-form-textarea {
@@ -443,6 +458,13 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     font: normal 400 20px/40px "Inter", sans-serif;
     color: #BDAE82;
     padding-left: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+::placeholder {
+    font-family: inherit;
+    color: #bdae82;
+    font-size: 20px;
 }
 
 /*  */
@@ -475,6 +497,11 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 .footer-list-item-link {
     text-decoration: none;
     color: #FFFFFF;
+    transition: ease-in-out 0.3s;
+}
+
+.footer-list-item-link:hover {
+    color:#BDAE82;
 }
 
 .socials {
@@ -491,7 +518,12 @@ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
 .socials-item-link {
     width: 32px;
     height: 32px;
-    /* transition: filter ease-in-out 0.3s; */
+    transition: ease-in-out 0.3s;
+}
+
+.socials-item-link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+  contrast(87%);
 }
 
 .socials-item-link.insta {
