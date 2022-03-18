@@ -214,6 +214,12 @@ body {
     margin-top: 100px;
 }
 
+@media (max-width: 780px) {
+    .section {
+        margin-top: 80px;
+    }
+}
+
 .section-title {
     text-align: center;
     margin-bottom: 60px;
@@ -222,6 +228,13 @@ body {
     font: normal 700 40px/80px "Merriweather", sans-serif;
     color: #BDAE82;
     overflow: hidden;
+}
+
+@media (max-width: 780px) {
+    .section-title {
+        margin-bottom: 50px;
+        font-size: 32px;
+    }
 }
 
 .section-title::before, .section-title::after {
@@ -256,6 +269,13 @@ body {
     color: white;
 }
 
+@media (max-width: 780px) {
+    .skills-list {
+        max-width: 728px;
+        row-gap: 36px;
+    }
+}
+
 .skills-list-item {
     display: flex;
     flex-direction: column;
@@ -264,9 +284,22 @@ body {
     width: 100%;
 }
 
+@media (max-width: 780px) {
+    .skills-list-item {
+        max-width: 300px;
+        padding-bottom: 40px;
+    }
+}
+
 .skills-list-item-icon {
     height: 50px;
     margin-bottom: 50px;
+}
+
+@media (max-width: 780px) {
+    .skills-list-item-icon {
+        margin-bottom: 30px;
+    }
 }
 
 .skills-list-item-title {
@@ -284,24 +317,37 @@ body {
     font: normal 400 18px/36px "Inter", sans-serif;
 }
 
+@media (max-width: 780px) {
+    .skills-list-item-text {
+        line-height: 21px;
+    }
+}
+
 .skills-list-item-icon.skills-camera {
-    background-image: url(./assets/svg/skills-camera.svg);
+    background: url(./assets/svg/skills-camera.svg) no-repeat;
     width: 62px;
 }
 
 .skills-list-item-icon.skills-video {
-    background-image: url(./assets/svg/skills-video.svg);
+    background: url(./assets/svg/skills-video.svg) no-repeat;
     width: 60px;
 }
 
 .skills-list-item-icon.skills-retouch {
-    background-image: url(./assets/svg/skills-retouch.svg);
+    background: url(./assets/svg/skills-retouch.svg) no-repeat;
     width: 66px;
 }
 
 .skills-list-item-icon.skills-audio {
-    background-image: url(./assets/svg/skills-audio.svg);
+    background: url(./assets/svg/skills-audio.svg) center center no-repeat;
     width: 32px;
+}
+
+@media (max-width: 780px) {
+    .skills-list-item-icon.skills-audio {
+        margin-bottom: 22px;
+        padding-top: 8px;
+    }
 }
 
 /*  */
