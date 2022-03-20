@@ -618,6 +618,11 @@ body {
     color: #FFFFFF;
 }
 
+@media (max-width: 780px) {
+    .footer {
+        height: 190px;
+    }
+}
 .footer-list {
     display: flex;
     list-style: none;
@@ -627,6 +632,12 @@ body {
     justify-content: space-between;
     padding: 0 20px;
     font: normal 400 20px/50px "Inter", sans-serif;
+}
+
+@media (max-width: 780px) {
+    .footer-list {
+        flex-direction: column;
+    }
 }
 
 .footer-list-item {
