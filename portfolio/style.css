@@ -416,6 +416,12 @@ body {
     background-size: cover;
 }
 
+@media (max-width: 780px) {
+    .video-player {
+        height: 418px;
+    }
+}
+
 .video-player-button {
     position: absolute;
     width: 129px;
@@ -424,6 +430,14 @@ body {
     border: none;
     background: url(./assets/svg/video-play.svg) no-repeat center center;
     transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 780px) {
+    .video-player-button {
+        width: 75px;
+        height: 75px;
+        background-size: cover;
+    }
 }
 
 .video-player-button:hover {
