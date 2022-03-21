@@ -584,14 +584,16 @@ body.light-theme {
 .skills-list-item-icon.skills-audio {
     background: url(./assets/svg/skills-audio.svg) center center no-repeat;
     width: 32px;
+    margin-bottom: 22px;
+    padding-top: 8px;
 }
 
-@media (max-width: 780px) {
+/* @media (max-width: 780px) {
     .skills-list-item-icon.skills-audio {
         margin-bottom: 22px;
         padding-top: 8px;
     }
-}
+} */
 
 /*  */
 
