@@ -181,12 +181,6 @@ body {
     color: #BDAE82;
 }
 
-@media (max-width: 780px) {
-    .header .lang-switch {
-        margin-left: auto;
-    }
-}
-
 /*  */
 
 .burger {
@@ -257,13 +251,24 @@ body {
     margin-left: 38px;
 }
 
+@media (max-width: 780px) {
+    .header .lang-switch {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
 .lang-switch-button {
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.5s;
     font: normal 400 20px/50px "Inter", sans-serif;
+}
+
+.lang.active {
+    color: #BDAE82;
 }
 
 /*  */
