@@ -4,26 +4,33 @@ import i18Obj from './translate.js';
 
 const langEn = document.querySelector('.lang-en');
 const langRu = document.querySelector('.lang-ru');
-
 let lang = localStorage.getItem('lang') || 'en';
-// let theme = localStorage.getItem('theme') || 'dark';
+
+const lightThemeList = document.querySelectorAll('body,.hero-wrapper,.header-logo-link,.nav-wrapper,.list-item-link,.burger,.line,.lang,.theme-switch,.hero-title,.hero-text,.button,.section,.section-title,.skills-list-item,.portfolio-buttons-item,.price-item-title,.price-item-price,.price-item-description-text,.contacts-wrapper,.contacts-info-title,.contacts-form-input,.contacts-form-textarea,.footer-list-item,.footer-list-item-link,.socials-item-link');
+const switchTheme = document.querySelector('.theme-switch');
+let theme = localStorage.getItem('theme') || 'dark-theme';
 
 const setLocalStorage = () => {
-    // localStorage.setItem('theme', theme);
+    localStorage.setItem('theme', theme);
     localStorage.setItem('lang', lang);
 }
 
 window.addEventListener('beforeunload', setLocalStorage);
 
 const getLocalStorage = () => {
-    // if (localStorage.getItem('theme') === 'white') {
-    //     whiteThemeList.forEach((el) => el.classList.add('white'));
-    // }
+    if (localStorage.getItem('theme') === 'light-theme') {
+        lightThemeList.forEach((el) => el.classList.add('light-theme'));
+    }
     if (localStorage.getItem('lang') === 'ru') {
         langRu.classList.add('active');
         langEn.classList.remove('active');
         getTranslate(lang);
     }
+}
+
+const themeClickHandler = () => {
+    theme === 'dark' ? theme = 'light-theme' : theme = 'dark';
+    lightThemeList.forEach((el) => el.classList.toggle('light-theme'));
 }
 
 window.addEventListener('load', getLocalStorage);
@@ -56,8 +63,7 @@ const getTranslate = (lang) => {
 
 langEn.addEventListener('click', toggleSwitchLang);
 langRu.addEventListener('click', toggleSwitchLang);
-
-
+switchTheme.addEventListener('click', themeClickHandler);
 
 // burger menu code
 
@@ -103,5 +109,3 @@ const togglePortfolioSeasons = (event) => {
 }
 
 portfolioAllBtns.addEventListener('click', togglePortfolioSeasons);
-
-// 
