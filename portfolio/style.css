@@ -695,7 +695,7 @@ body.light-theme {
     height: 130px;
     cursor: pointer;
     border: none;
-    background: url(./assets/svg/video-play.svg) no-repeat center center;
+    background: url('./assets/svg/video-play.svg') no-repeat center center;
     transition: ease-in-out 0.3s;
 }
 
