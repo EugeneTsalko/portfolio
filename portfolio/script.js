@@ -1,3 +1,5 @@
+// burger menu code
+
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-wrapper');
 const overlay = document.querySelector('.overlay');
@@ -19,3 +21,26 @@ const closeBurger = (event) => {
 burger.addEventListener('click', toggleBurger);
 nav.addEventListener('click', closeBurger);
 overlay.addEventListener('click', closeBurger);
+
+// portfolio buttons code
+
+const portfolioBtn = document.querySelectorAll('.portfolio-buttons-item');
+const portfolioAllBtns = document.querySelector('.portfolio-buttons');
+const portfolioImages = document.querySelectorAll('.portfolio-images-item');
+
+const togglePortfolioSeasons = (event) => {
+    if (event.target.classList.contains('portfolio-buttons-item')) {
+        if (event.target.classList.contains('active')) {
+            return;
+        }
+        portfolioBtn.forEach((btn) => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        portfolioImages.forEach((img, idx) => {
+            img.style.backgroundImage = `url(./assets/img/jpg/${event.target.id}/${idx + 1}.jpg)`;
+        });
+    }
+}
+
+portfolioAllBtns.addEventListener('click', togglePortfolioSeasons);
+
+// 
