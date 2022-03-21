@@ -265,6 +265,7 @@ body {
     cursor: pointer;
     transition: ease-in-out 0.5s;
     font: normal 400 20px/50px "Inter", sans-serif;
+    text-transform: uppercase;
 }
 
 .lang.active {
@@ -272,6 +273,15 @@ body {
 }
 
 /*  */
+
+.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+  
+.light-theme:hover {
+    color: #000;
+}
 
 .hero-section {
     display: flex;

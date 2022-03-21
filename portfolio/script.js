@@ -1,4 +1,4 @@
-// // translate
+// translate, theme and localStorage
 
 import i18Obj from './translate.js';
 
