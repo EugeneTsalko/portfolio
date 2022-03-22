@@ -111,12 +111,64 @@
                 <div class="portfolio-images-item" style="background-image: url(./assets/img/jpg/autumn/6.jpg)"></div>
             </div>
         </section>
+
         <section class="video section" id="video">
+            
             <h2 class="section-title video-title" data-i18="video">Video</h2>
-            <div class="video-player">
-                <button class="video-player-button"></button>
+           
+            <div class="video__thumbnail paused">
+
+                <video class="video__screen" src="./assets/video/video.mp4" poster="./assets/img/jpg/video-player.jpg"></video>
+                
+                <div class="video__play-button-wrapper">
+                    <button class="video__play-button">
+                      <img class="video__play-logo icon" src="./assets/svg/video-play.svg" alt="Play Button">
+                    </button>
+                </div>
+                
+                <div class="video__controls unused">
+                    
+                    <div class="video__controls-progress-bar">
+                      <input type="range" class="video__controls-progress" min="0" max="1" step="0.001" value="0">
+                    </div>
+
+                    <div class="video__controls-board">
+                        
+                        <div class="video__controls-play-container">
+                            
+                            <div class="video__controls-play">
+                                <button class="video__controls-play-button"></button>
+                            </div>
+                            
+                            <div class="video__controls-time">
+                                <span class="video__controls-time-current">0:00</span>
+                                <span>/</span>
+                                <span class="video__controls-time-duration">0:00</span>
+                            </div>
+
+                        </div>
+
+                        <div class="video__controls-volume-container">
+                            
+                            <button class="video__controls-speaker">
+                              <img src="./assets/svg/volume.svg" alt="Speaker" class="video__controls-speaker-icon icon-speaker-on">
+                              <img src="./assets/svg/mute.svg" alt="Mute" class="video__controls-speaker-icon icon-speaker-off">
+                            </button>
+                            
+                            <input type="range" class="video__controls-volume" min="0" max="1" step="0.01" value="0.5">
+                            
+                            <button class="video__controls-fullscreen">
+                              <img src="./assets/svg/fullscreen.svg" alt="Fullscreen" class="video__controls-fullscreen-icon">
+                            </button>
+
+                          </div>
+                    </div>
+                </div>
             </div>
+
+
         </section>
+
         <section class="price section" id="price">
             <h2 class="section-title price-title" data-i18="price">Price</h2>
             <div class="price-wrapper">
