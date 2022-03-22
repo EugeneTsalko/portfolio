@@ -2,7 +2,7 @@
 Portfolio – задание stage#0 в ходе выполнения которого вы сверстаете landing page портфолио фотографа, сделаете его адаптивным и интерактивным.
 
 
-Deploy - https://eugenetsalko.github.io/portfolio/
+Deploy - https://eugenetsalko.github.io/portfolio/portfolio
 
 Based on this templates:
 
